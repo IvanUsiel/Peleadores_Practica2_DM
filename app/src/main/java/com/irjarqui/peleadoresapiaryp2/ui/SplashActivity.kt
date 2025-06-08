@@ -23,19 +23,24 @@ class SplashActivity : AppCompatActivity() {
         binding = ActivitySplashBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Muestra imagen animada
         Glide.with(this)
             .load(R.drawable.joes_plash)
             .into(binding.splashGif)
 
-        // Reproduce sonido
         mediaPlayer = MediaPlayer.create(this, R.raw.sound_intro)
         mediaPlayer?.start()
 
-        // Espera y navega
         lifecycleScope.launch {
             delay(3000)
-            startActivity(Intent(this@SplashActivity, MainActivity::class.java))
+
+            val currentUser = com.google.firebase.auth.FirebaseAuth.getInstance().currentUser
+
+            if (currentUser != null) {
+                startActivity(Intent(this@SplashActivity, MainActivity::class.java))
+            } else {
+                startActivity(Intent(this@SplashActivity, AuthActivity::class.java))
+            }
+
             finish()
         }
     }

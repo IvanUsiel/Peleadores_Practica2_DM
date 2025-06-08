@@ -18,6 +18,8 @@ picasso = "2.71828"
 playServicesLocation = "21.3.0"
 playServicesMaps = "19.2.0"
 roundedimageview = "2.3.0"
+googleGmsGoogleServices = "4.4.2"
+firebaseAuth = "23.2.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -38,8 +40,10 @@ play-services-location = { module = "com.google.android.gms:play-services-locati
 play-services-maps = { module = "com.google.android.gms:play-services-maps", version.ref = "playServicesMaps" }
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "converterGson" }
 roundedimageview = { module = "com.makeramen:roundedimageview", version.ref = "roundedimageview" }
+firebase-auth = { group = "com.google.firebase", name = "firebase-auth", version.ref = "firebaseAuth" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+google-gms-google-services = { id = "com.google.gms.google-services", version.ref = "googleGmsGoogleServices" }
 

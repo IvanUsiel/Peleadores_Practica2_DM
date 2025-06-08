@@ -1,21 +1,43 @@
 package com.irjarqui.peleadoresapiaryp2.ui
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
+import android.util.Patterns
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import com.google.firebase.auth.FirebaseAuth
 import com.irjarqui.peleadoresapiaryp2.R
 
 class ResetPasswordActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_reset_password)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        val emailEt = findViewById<EditText>(R.id.etEmailReset)
+        val btnReset = findViewById<Button>(R.id.btnSendReset)
+        val btnBack = findViewById<Button>(R.id.btnBack)
+
+        btnReset.setOnClickListener {
+            val email = emailEt.text.toString().trim()
+            if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+                Toast.makeText(this, R.string.correo_invalido, Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
+            FirebaseAuth.getInstance().sendPasswordResetEmail(email)
+                .addOnCompleteListener { task ->
+                    if (task.isSuccessful) {
+                        Toast.makeText(this,
+                            getString(R.string.correo_enviado_revisa_tu_bandeja), Toast.LENGTH_LONG).show()
+                        finish()
+                    } else {
+                        Toast.makeText(this, "Error: ${task.exception?.message}", Toast.LENGTH_LONG).show()
+                    }
+                }
+        }
+
+        btnBack.setOnClickListener {
+            finish()
         }
     }
 }

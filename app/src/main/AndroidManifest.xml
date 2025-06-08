@@ -5,7 +5,6 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
-
     <application
         android:name=".application.PeleadoresRFApp"
         android:allowBackup="true"
@@ -17,11 +16,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PeleadoresApiaryP2"
         tools:targetApi="31">
+        <activity
+            android:name=".ui.ResetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.AuthActivity"
+            android:exported="false" />
 
-        <meta-data android:name="com.google.android.geo.API_KEY"
-            android:value="${MAPS_API_KEY}"/>
-
-
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="${MAPS_API_KEY}" />
         <activity
             android:name=".ui.MainActivity"
             android:exported="false" />
@@ -30,6 +37,7 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

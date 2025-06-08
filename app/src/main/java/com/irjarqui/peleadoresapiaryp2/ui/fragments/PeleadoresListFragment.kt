@@ -1,5 +1,6 @@
 package com.irjarqui.peleadoresapiaryp2.ui.fragments
 
+import android.content.Intent
 import android.media.MediaPlayer
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -10,12 +11,14 @@ import android.widget.Toast
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.snackbar.Snackbar
+import com.google.firebase.auth.FirebaseAuth
 import com.irjarqui.peleadoresapiaryp2.R
 import com.irjarqui.peleadoresapiaryp2.application.PeleadoresRFApp
 import com.irjarqui.peleadoresapiaryp2.data.PeleadorRepository
 import com.irjarqui.peleadoresapiaryp2.data.remote.model.FavoritoRequestDto
 import com.irjarqui.peleadoresapiaryp2.data.remote.model.PeleadorDto
 import com.irjarqui.peleadoresapiaryp2.databinding.FragmentPeleadoresListBinding
+import com.irjarqui.peleadoresapiaryp2.ui.AuthActivity
 import com.irjarqui.peleadoresapiaryp2.ui.adapters.PeleadorAdapter
 import kotlinx.coroutines.launch
 
@@ -78,6 +81,12 @@ class PeleadoresListFragment : Fragment() {
             }
 
         }
+        binding.btnLogout.setOnClickListener {
+            FirebaseAuth.getInstance().signOut()
+            Toast.makeText(requireContext(), "¡Hasta luego!", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(requireContext(), AuthActivity::class.java))
+            requireActivity().finish()
+        }
     }
 
     private fun toggleFavorite(selectedPeleador: PeleadorDto, peleadores: List<PeleadorDto>) {
@@ -127,6 +136,7 @@ class PeleadoresListFragment : Fragment() {
             }
         }
     }
+
 
 
 

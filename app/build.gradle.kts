@@ -3,6 +3,7 @@ import java.util.Properties
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.google.gms.google.services)
 }
 
 android {
@@ -64,6 +65,7 @@ dependencies {
     implementation(libs.picasso)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.roundedimageview)
+    implementation(libs.firebase.auth)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -76,6 +78,7 @@ dependencies {
 
 //Para corrutinas con alcance viewModel
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
+
 
 
 }

@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.PeleadoresApiaryP2" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="backgroundColor">@color/background</item>
+        <item name="android:windowBackground">@color/black</item>
+    </style>
+    <style name="Theme.PeleadoresApiaryP2" parent="Base.Theme.PeleadoresApiaryP2" />
+</resources>

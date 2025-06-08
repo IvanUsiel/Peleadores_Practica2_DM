@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">PeleadoresApiaryP2</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="error_al_cargar">Error al cargar los detalles</string>
+    <string name="peleador_eliminado">Peleador eliminado</string>
+    <string name="error_al_eliminar">Error al eliminar peleador</string>
+    <string name="error_conex">Error de conexión</string>
+    <string name="user_example">user_example</string>
+    <string name="peleador_favorito">Este es mi peleador favorito.</string>
+    <string name="deshacer">Deshacer</string>
+    <string name="disciplina_label">Disciplina: %1$s</string>
+    <string name="disciplina_record">Record: %1$s</string>
+    <string name="disciplina_titulos">Titulos: %1$s</string>
+    <string name="splash_animation">Splash Animation</string>
+    <string name="nombre_del_peleador">Nombre del Peleador</string>
+    <string name="imagen_del_peleador">Imagen del peleador</string>
+    <string name="disciplina_boxeo">Disciplina: Boxeo</string>
+    <string name="record_27_5">Record: 27-5</string>
+    <string name="t_tulos_campe_n_mundial">Títulos: Campeón mundial</string>
+    <string name="biograf_a_del_peleador">Biografía del peleador</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="mex">Mex</string>
+    <string name="guantes_de_boxeo">Guantes de boxeo</string>
+    <string name="peleador">Peleador</string>
+    <string name="disciplina">Disciplina</string>
+    <string name="r_cord">Récord</string>
+    <string name="favorito">Favorito</string>
+    <string name="nacimiento">Lugar de nacimiento:</string>
+    <string name="error_mapa">Error al mostrar el mapa</string>
+    <string name="error_estilo_del_mapa">No se pudo aplicar el estilo del mapa</string>
+    <string name="lugar_de_nacimiento">Lugar de nacimiento: %1$s</string>
+</resources>

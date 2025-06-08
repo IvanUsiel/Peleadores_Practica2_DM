@@ -1,0 +1,134 @@
+{
+  "project_info": {
+    "project_number": "592681372581",
+    "project_id": "idiplo-irjarqui",
+    "storage_bucket": "idiplo-irjarqui.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592681372581:android:39051c12e5a2879339364c",
+        "android_client_info": {
+          "package_name": "com.irjarqui.idiplo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "592681372581-eid308bhgjr02o0ccu1ug9agbjdrj2dn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQ6Z3zLxDAKmWeG4A3ptYK4jWILUZbM2E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "592681372581-eid308bhgjr02o0ccu1ug9agbjdrj2dn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592681372581:android:e9e4ca4094c71fa439364c",
+        "android_client_info": {
+          "package_name": "com.irjarqui.mobileshopdm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "592681372581-ve3q2e7ac347v2f9hb9mlug68hv6jtud.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.irjarqui.mobileshopdm",
+            "certificate_hash": "51f4e05cee69ff03ae5997fe863ebd2073cacae9"
+          }
+        },
+        {
+          "client_id": "592681372581-eid308bhgjr02o0ccu1ug9agbjdrj2dn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQ6Z3zLxDAKmWeG4A3ptYK4jWILUZbM2E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "592681372581-eid308bhgjr02o0ccu1ug9agbjdrj2dn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592681372581:android:19b92c177ca7ce4139364c",
+        "android_client_info": {
+          "package_name": "com.irjarqui.peleadoresapiaryp2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "592681372581-eid308bhgjr02o0ccu1ug9agbjdrj2dn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQ6Z3zLxDAKmWeG4A3ptYK4jWILUZbM2E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "592681372581-eid308bhgjr02o0ccu1ug9agbjdrj2dn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592681372581:android:f093d3298199e87439364c",
+        "android_client_info": {
+          "package_name": "com.irjarqui.travelsdiploirjarqui"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "592681372581-eid308bhgjr02o0ccu1ug9agbjdrj2dn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQ6Z3zLxDAKmWeG4A3ptYK4jWILUZbM2E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "592681372581-eid308bhgjr02o0ccu1ug9agbjdrj2dn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
